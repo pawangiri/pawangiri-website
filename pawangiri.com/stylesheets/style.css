@@ -1,0 +1,466 @@
+/*Author: Pawan Giri
+ Date created: 1 Jan 2013
+*/
+
+/*----------------------------------Importing normalizer--------------------------------------- */
+@import url('normalize.css');
+
+
+/*----------------------------------Font import--------------------------------------- */
+@font-face{
+	font-family: Eurostile;
+	src:url('Eurostile.eto');
+	src:local(Eurostile), url('Eurostile.ttf') format('truetype'),
+		url('Eurostile.eto?#iefix') format('embeded-opentype'),
+		url('Eurostile.woff') format('woff'),
+		url('Eurostile.ttf') format('truetype'),
+		url('Eurostile.svg#SansumiRegular') format('svg');
+}
+
+
+/*----------------------------------Color definition--------------------------------------- */
+
+/*  -- Color code for pawangiri.com 
+#F4F4F4 -- Off White
+#171717 -- Black
+#333446 -- violet
+#15A5B5 -- Blue
+#75726B -- dark brown
+#8F8B82 -- Light Brown
+#ED6456 -- Tomato
+*/
+
+
+/*----------------------------------Body for all pages--------------------------------------- */
+
+body {
+	font-family: "Eurostile";
+	color:#333446;
+}
+
+.container{
+	width:960px;
+	height:485px;
+	background-color: #F4F4F4;
+	margin: 0 auto;
+}
+
+
+
+/*----------------------------------Work page--------------------------------------- */
+
+.workcontainer{
+	width:860px;
+	height:330px;
+/*	background-color:#C0C0C0; */
+	margin: 0 auto;
+}
+
+.programming{
+	position:relative;
+	height:205px;
+	width:35px;
+/*	border:#000000 1px solid; */
+	float:left;
+	background: url(../images/spritesheet1.png) no-repeat -110px -187px;
+}
+
+.progdetail{
+	height:205px;
+	width:820px;
+/*	border:#000000 1px solid; */
+	float:left;
+}
+
+.java, .jsp, .web2, .html5, .css3, .php, .mysql, .javascript{
+	height:95px;
+	background-color:#8F8B82;
+	opacity: .6;
+/*	border:#000000 1px solid; */
+	float:left;
+	color:#F4F4F4;
+	margin-left: 15px;
+}
+
+.css3, .php, .mysql, .javascript{
+	margin-top: 13px;
+}
+
+.css3{
+	width:200px;
+}
+
+.php{
+	width:190px;
+}
+
+.mysql{
+	width:180px;
+}
+
+.javascript{
+	width:180px;
+}
+
+.java{
+	width:170px;
+}
+
+.jsp{
+	width:170px;
+}
+
+.web2, .html5{
+	width: 205px;
+}
+
+
+.progtext, #javaimg, #jspimg, #html5img, #css3img, #phpimg, #mysqlimg{
+	float:left;
+}
+
+.progtext{
+	float:right;
+	font-size: 1.5em;
+	margin-top:20%;
+	margin-right: 15px;
+	
+}
+
+.web2 #progtext, .javascript #progtext{
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 30px;
+}
+
+
+.cgi{
+	float:left;
+	margin-top: 30px;
+}
+
+.cgiimg{
+	float:left;
+	background: url('../images/spritesheet1.png') no-repeat -4px -199px;
+	width: 32px;
+	height: 95px;
+}
+
+.cgidetail{
+	float:left;
+	
+}
+
+
+.vimeo{
+	width: 235px;
+	height:95px;
+	background-color:#8F8B82;
+	opacity: .6;
+	margin-left: 17px;
+	position: relative;
+	
+}
+
+
+#javaimg{
+	background: url('../images/spritesheet1.png') no-repeat -167px -4px;
+	width: 49px;
+	height: 65px;
+	margin: 12px 0 0 15px;	
+}
+
+#jspimg{
+	background: url('../images/spritesheet1.png') no-repeat -167px -4px;
+	width: 49px;
+	height: 65px;
+	margin: 12px 0 0 15px;	
+}
+
+
+#html5img{
+	background: url('../images/spritesheet1.png') no-repeat -233px -10px;
+	width: 42px;
+	height: 59px;
+	margin: 12px 0 0 15px;
+}
+
+#css3img{
+	background: url('../images/spritesheet1.png') no-repeat -171px -103px;
+	width: 45px;
+	height: 40px;
+	margin: 27px 0 0 15px;
+}
+
+#phpimg{
+	background: url('../images/spritesheet1.png') no-repeat -233px -111px;
+	width: 66px;
+	height: 32px;
+	margin: 27px 0 0 15px;
+}
+
+#mysqlimg{
+	background: url('../images/spritesheet1.png') no-repeat -242px -160px;
+	width: 48px;
+	height: 32px;
+	margin: 27px 0 0 15px;
+}
+
+
+
+
+.vimeoimg{
+	background: url('../images/spritesheet1.png') no-repeat -188px -220px;
+	position:absolute;
+	margin:35px 55px;
+	width: 107px;
+	height: 21px;
+}
+
+
+
+.java:hover, .jsp:hover, .web2:hover, .html5:hover, .css3:hover, .php:hover, .mysql:hover, .javascript:hover, .vimeo:hover{
+	background-color:#ED6456;
+	opacity: 1;
+	
+}
+
+
+
+
+
+/*---------------------------------- navigation --------------------------------------- */
+nav{
+	width:960px;
+	margin: 0 auto;
+}
+
+.navigation{
+	height:240px;
+	vertical-align:middle;
+/*	background-color: #C0C0C0; */
+	
+}
+
+.bluenav{
+	background-image: url(../images/bluebg.png);
+	background-repeat:repeat-x;
+	margin-top:50px;
+	width: 216px;
+	height:142px;
+	float:left;
+}
+
+.greynav{
+	background-image: url(../images/greybg.png);
+	background-repeat:repeat-x;
+	margin-top:50px;
+	width: 744px;
+	height:142px;
+	float:left;
+	color:#F4F4F4;
+}
+
+.pglogo{
+	position:absolute;
+	margin-left:96px;
+	background-image: url(../images/pglogo.png);
+	width: 242px;
+	height:242px;
+}
+
+
+#space, #homelink, #biolink, #worklink, #hobbieslink, #contactlink{
+	width:16%;
+	height:inherit;
+	/*border: 1px solid red; */
+	float:left;
+	font-size: 1.15em;
+	color:#F4F4F4;
+	text-align: center;
+	margin-top:10px;
+	
+}
+
+.homeimg, .bioimg, .workimg, .hobbiesimg, .contactimg{
+	margin:30px auto 10px;
+	width: 35px;
+	height: 35px;
+}
+
+.homeimg{
+	background: url('../images/spritesheet1.png') no-repeat -40px 0;
+}
+
+.bioimg{
+	background: url('../images/spritesheet1.png') no-repeat -40px -38px;
+} 
+
+.workimg{
+	background: url('../images/spritesheet1.png') no-repeat -46px -77px;
+}
+
+.hobbiesimg{
+	background: url('../images/spritesheet1.png') no-repeat  -40px -116px;
+}
+
+.contactimg{
+	background: url('../images/spritesheet1.png') no-repeat -41px -154px;
+}
+
+/*---------------------------------- body content --------------------------------------- */
+
+
+.maintextholder{
+	position:relative;
+	top:15%;
+	width: 25%;
+	/*background-color: #C0C0C0; */	
+}
+
+
+.maintext{
+	float:right;
+	font-size: 5.6em;
+	
+}
+
+#eat{
+	-webkit-transform:rotate(17deg); 
+	-moz-transform:rotate(17deg);
+	-ms-transform:rotate(17deg);
+	-o-transform:rotate(17deg);
+}
+
+#code{
+	-webkit-transform:rotate(5deg);
+	-moz-transform:rotate(5deg);
+	-ms-transform:rotate(5deg);
+	-o-transform:rotate(5deg);
+}
+
+
+#sleep{
+	-webkit-transform:rotate(-7deg);
+	-moz-transform:rotate(-7deg);
+	-ms-transform:rotate(-7deg);
+	-o-transform:rotate(-7deg);
+}
+
+
+
+
+/*----------------------------------Bio pages--------------------------------------- */
+
+.pgtitle{
+	position:relative;
+	width: 860px;
+	height:100px;
+	font-size: 3em;
+/*	background-color:#C0C0C0; */
+	margin: 0 auto;
+}
+
+.pgtitle span{
+	position:absolute;
+	bottom:0;
+	text-indent: 10px;
+}
+
+.biocontainer{
+	width:500px;
+	height:360px;
+	/*background-color:#15A5B5;*/
+	margin-left:50px;
+	float:left;
+}
+
+.resumedl{
+	width:360px;
+	height:360px;
+	background-color:#F4F4F4;
+	float:left;
+	text-align: center;
+}
+
+.biocontainer p{
+	padding: 10px;
+	text-align:justify;
+	
+}
+
+#resdownload {
+	background: url('../images/spritesheet1.png') no-repeat -94px -4px;
+	width: 63px;
+	height: 119px;
+	margin: 30px auto;
+}
+
+.linkedin {
+	background: url('../images/spritesheet1.png') no-repeat -100px -131px;
+	width: 50px;
+	height: 45px;
+	margin: 40px auto;
+}
+
+
+
+
+/*----------------------------------Footer--------------------------------------- */
+footer{
+	text-align:center;
+	height: 35px;
+	position:relative;
+	margin: 0 auto;
+}
+
+
+/*----------------------------------Links--------------------------------------- */
+.greynav a:link, .greynav a:visited{
+	text-decoration:none;
+	background-color:#ED6456;
+	color:#F4F4F4;
+}
+
+
+.home:hover, .bio:hover, .work:hover, .hobbies:hover, .contact:hover{
+	color:#15A5B5;
+}
+
+.homeimg:hover{
+		background: url('../images/spritesheet1.png') no-repeat -1px -1px;
+}
+
+.bioimg:hover{
+	background: url('../images/spritesheet1.png') no-repeat -1px -39px;
+}
+
+.workimg:hover{
+	background: url('../images/spritesheet1.png') no-repeat -8px -77px;
+}
+
+.hobbiesimg:hover{
+	background: url('../images/spritesheet1.png') no-repeat  -1px -118px;
+}
+
+.contactimg:hover{
+	background: url('../images/spritesheet1.png') no-repeat -3px -154px;
+}
+
+
+
+
+.maintext{
+	text-decoration:none;
+	color:#333446;
+	-webkit-transition: color .5s ease-out, background 1s ease-in;
+	-moz-transition: color .5s ease-out, background 1s ease-in;
+	-ms-transition: color .5s ease-out, background 1s ease-in;
+	-o-transition: color .5s ease-out, background 1s ease-in;
+}
+
+.maintext:hover{
+	text-decoration:none;
+	color:#ED6456;
+}
+

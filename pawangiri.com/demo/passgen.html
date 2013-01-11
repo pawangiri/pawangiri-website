@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>passgen</title>
+  <meta name="description" content="" />
+  <meta name="author" content="Pawan Giri" />
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" type="text/css" href="../stylesheets/passgen.css"/>
+  <script type="text/javascript" src="../javascripts/passgen.js"></script>
+  
+  
+</head>
+
+<body >
+  <div class="wrapper">
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+	
+	
+    <div class="container">
+    <h3>Select Options from below</h3>
+    	
+      <form name='testing1' onsubmit="passgen(this); return false;">
+      	<div class="rowdivision">
+      		<div class="passLable">Upper Case:</div>
+      		<div class="passLable1"><input type="checkbox" name="cb" value="upperCase"/></div>
+      	</div>
+      	
+      	<div class="rowdivision">
+	      	<div class="passLable">Lower Case:</div>
+	      	<div class="passLable1"><input type="checkbox" name="cb" value="lowerCase"/></div>
+      	</div>
+      	
+      	<div class="rowdivision">
+	      	<div class="passLable">Numbers:</div>
+	      	<div class="passLable1"><input type="checkbox" name="cb" value="num"/></div>
+      	</div>
+      	
+      	<div class="rowdivision">
+	      	<div class="passLable">Special Characters:</div>
+	      	<div class="passLable1"><input type="checkbox" name="cb" value="chs"/></div>
+      	</div>
+      	
+      	<div class="rowdivision">
+	      	<div class="passLable">Password Length:</div>
+	      	<div class="passLable1"><input type="text" name="passlength" onkeypress="return numberinput(event)" /></div>
+      	</div>
+      	
+      	<div class="rowdivision">
+	      	<input type="reset" value="Clear" onclick="clearpass()"/> <input type="submit"  value="Submit"/>
+      	</div>
+      </form>
+    
+    <div class="displayPass">
+    	<p id="dispas"></p>
+    </div>
+    
+    
+    </div>
+
+    <footer>
+     <p>&copy; Copyright  by Pawan Giri</p>
+    </footer>
+  </div>
+</body>
+</html>
